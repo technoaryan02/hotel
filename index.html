@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hotel Landing Page</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="container">
+                <h1>Hotel Lux</h1>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#rooms">Rooms</a></li>
+                    <li><a href="#amenities">Amenities</a></li>
+                    <li><a href="#booking">Booking</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+        <section id="home" class="hero">
+            <div class="hero-content">
+                <h2>Welcome to Hotel Lux</h2>
+                <p>Your luxury stay awaits</p>
+                <a href="#booking" class="cta-button">Book Now</a>
+            </div>
+        </section>
+    </header>
+
+    <main>
+        <section id="rooms" class="rooms">
+            <div class="container">
+                <h2>Our Rooms</h2>
+                <div class="room">
+                    <h3>Deluxe Room</h3>
+                    <p>A spacious room with a king-sized bed and a view of the city.</p>
+                </div>
+                <div class="room">
+                    <h3>Standard Room</h3>
+                    <p>Comfortable and cozy with all the essential amenities.</p>
+                </div>
+                <div class="room">
+                    <h3>Suite</h3>
+                    <p>Luxurious suite with a living area and premium amenities.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="amenities" class="amenities">
+            <div class="container">
+                <h2>Hotel Amenities</h2>
+                <ul>
+                    <li>Free Wi-Fi</li>
+                    <li>Swimming Pool</li>
+                    <li>24/7 Room Service</li>
+                    <li>Gym and Fitness Center</li>
+                    <li>Restaurant and Bar</li>
+                </ul>
+            </div>
+        </section>
+
+        <section id="booking" class="booking">
+            <div class="container">
+                <h2>Book Your Stay</h2>
+                <form id="bookingForm">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+                    
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                    
+                    <label for="checkin">Check-in Date:</label>
+                    <input type="date" id="checkin" name="checkin" required>
+                    
+                    <label for="checkout">Check-out Date:</label>
+                    <input type="date" id="checkout" name="checkout" required>
+                    
+                    <label for="room">Room Type:</label>
+                    <select id="room" name="room" required>
+                        <option value="deluxe">Deluxe Room</option>
+                        <option value="standard">Standard Room</option>
+                        <option value="suite">Suite</option>
+                    </select>
+                    
+                    <button type="submit">Submit</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer id="contact">
+        <div class="container">
+            <p>&copy; 2024 Hotel Lux. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
